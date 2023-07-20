@@ -1,0 +1,103 @@
+.hero {
+    margin: auto;
+    padding: 118px 0px;
+    margin: auto;
+    text-align: center;
+  
+    @media screen and (min-width: 1200px) {
+      padding: 200px 0px;
+      max-width: 1600px;
+    }
+  }
+  
+  .hero {
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    height: auto;
+    background-color: $footerColor;
+  
+    background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)),
+      url(../images/hero/hero-s.jpg);
+  
+    @media (min-device-pixel-ratio: 2), (min-resolution: 192dpi), (min-resolution: 2dppx) {
+      background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)),
+        url(../images/hero/hero-s@2x.jpg);
+    }
+  
+    @media screen and (min-width: 768px) {
+      background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)),
+        url(../images/hero/hero-m.jpg);
+  
+      @media (min-device-pixel-ratio: 2), (min-resolution: 192dpi), (min-resolution: 2dppx) {
+        background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)),
+          url(../images/hero/hero-m@2x.jpg);
+      }
+    }
+  
+    @media screen and (min-width: 1200px) {
+      background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)),
+        url(../images/hero/hero-lg.jpg);
+  
+      @media (min-device-pixel-ratio: 2), (min-resolution: 192dpi), (min-resolution: 2dppx) {
+        background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)),
+          url(../images/hero/hero-lg@2x.jpg);
+      }
+    }
+  }
+  
+  .hero__title {
+    margin: 0 auto;
+    max-width: 360px;
+  
+    font-weight: 900;
+    font-size: 26px;
+    line-height: 1.62;
+    text-align: center;
+    letter-spacing: 0.06em;
+  
+    text-transform: uppercase;
+    color: $whiteColor;
+  
+    @media screen and (min-width: 1200px) {
+      font-size: 44px;
+      line-height: 1.36;
+      max-width: 696px;
+    }
+  }
+  
+  .hero-button {
+    display: inline-block;
+    margin-top: 30px;
+    padding: 10px 32px;
+  
+    min-width: 200px;
+  
+    font-family: inherit;
+    font-weight: 700;
+    font-size: 16px;
+    text-align: center;
+    line-height: 1.88;
+    letter-spacing: 0.06em;
+  
+    cursor: pointer;
+    border: none;
+  
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+    border-radius: 4px;
+  
+    background-color: $accentColor;
+    color: $whiteColor;
+  
+    & {
+      transition-property: background-color;
+      transition-duration: 250ms;
+      transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+    }
+  
+    &:hover,
+    &:focus {
+      background-color: #188ce8;
+    }
+  }
+  
