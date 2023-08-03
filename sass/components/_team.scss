@@ -2,7 +2,7 @@
     background-color: $teamColor;
   }
   .team {
-    @include media (tablet){
+    @include media(tablet){
       display: flex;
       flex-wrap: wrap;
       margin: -15px;
@@ -22,12 +22,12 @@
         margin-bottom: 30px;
       }
     }
-      @include media (tablet){
+      @include media(tablet){
         margin: 15px;
         width: calc((100% - 2 * 30px) /2 );
       }
 
-      @include media (desktop){
+      @include media(desktop){
         width: calc((100% - 4 * 30px) /4 );
       }
   }
