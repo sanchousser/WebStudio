@@ -33,21 +33,23 @@
   
           <ul class="contacts list">
             <li class="contacts__item">
-              <a href="mailto:info@devstudio.com" class="link contacts__link contacts__link--mail">
+              <a href="" class="link contacts__link contacts__link--mail">
                 <svg width="16" height="12" class="contacts__logo">
                   <use href="./images/icon.svg#icon-mail"></use>
                 </svg>
-                info@devstudio.com</a
+                <p id="copyText">info@devstudio.com</p></a
               >
+              <div id="copyMessage" class="hidden">Copied to clipboard</div>
             </li>
   
             <li class="contacts__item">
-              <a href="tel:+380961111111" class="link contacts__link contacts__link--tel">
+              <a href="" class="link contacts__link contacts__link--tel">
                 <svg width="10" height="16" class="contacts__logo">
                   <use href="./images/icon.svg#icon-tel"></use>
                 </svg>
-                +38 096 111 11 11</a
+                <p id="copyText">+38 096 111 11 11</p></a
               >
+              <div id="copyMessage" class="hidden">Copied to clipboard</div>
             </li>
           </ul>
           <ul class="menu-networks list">
@@ -607,5 +609,6 @@
     </footer>
     <script src="./js/modal.js"></script>
     <script src="./js/menu.js"></script>
+    <script src="./js/copytext.js"></script>
   </body>
 </html>

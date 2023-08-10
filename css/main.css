@@ -745,6 +745,10 @@ body {
   }
 }
 
+.hidden {
+  display: none;
+}
+
 .contacts {
   display: flex;
   flex-wrap: wrap;
