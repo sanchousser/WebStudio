@@ -14,7 +14,6 @@
     @include media (tablet){
       display: flex;
       flex-wrap: wrap;
-
     }
     @include media(desktop){
       flex-wrap: nowrap;
@@ -80,7 +79,7 @@
 
     @include media (tablet){
       margin-top: 0px;
-      margin-bottom: 0;
+      margin-bottom: 0px;
       margin-left: 165px;
     }
     @include media (desktop){
