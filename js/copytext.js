@@ -1,19 +1,14 @@
-function copyToClipboard() {
-    const copyText = document.getElementById("copyText");
-    const textToCopy = copyText.textContent;
-
-    const textArea = document.createElement("textarea");
-    textArea.value = textToCopy;
-    document.body.appendChild(textArea);
-
-    textArea.select();
-    document.execCommand("copy");
-    
-    document.body.removeChild(textArea);
-
-    const copyMessage = document.getElementById("copyMessage");
-    copyMessage.classList.remove("hidden");
-    setTimeout(() => {
-        copyMessage.classList.add("hidden");
-    }, 2000); // Hide the message after 2 seconds (adjust as needed)
-}
+function myFunction() {
+    // Get the text field
+    var copyText = document.getElementById("copyText");
+  
+    // Select the text field
+    copyText.select();
+    copyText.setSelectionRange(0, 99999); // For mobile devices
+  
+     // Copy the text inside the text field
+    navigator.clipboard.writeText(copyText.value);
+  
+    // Alert the copied text
+    alert("Copied the text: " + copyText.value);
+  }

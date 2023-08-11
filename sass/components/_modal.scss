@@ -212,6 +212,7 @@
     display: inline-flex;
     align-items: center;
     justify-content: center;
+    cursor: pointer;
   
     width: 16px;
     height: 15px;
@@ -220,8 +221,23 @@
     border-radius: 2px;
     fill: #fff;
   
-  
-  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+
+    &:hover {
+      background-color: #999999;
+      fill: #999999;
+      border-color: #999999;
+    }
+
+    &:active,
+    &:checked {
+      background-color: $accentColor;
+      border-color: $accentColor;
+      fill: $whiteColor;
+    }
+    
+    &:focus {
+      border-color: $accentColor;
+    }
   }
 
   .checkbox__input {
@@ -233,16 +249,6 @@
     padding: 0;
     clip: rect(0 0 0 0);
     overflow: hidden;
-
-    &:active ~ .checkbox__icon,
-    &:checked ~ .checkbox__icon{
-      background-color: $accentColor;
-      border-color: $accentColor;
-      fill: $whiteColor;
-    }
-    &:focus ~ .checkbox__icon{
-      border-color: $accentColor;
-    }
   }
   
   .checkbox__link{
@@ -254,7 +260,7 @@
   font-size: 16px;
   line-height: 1.88;
   letter-spacing: 0.06em;
-  
+
   padding: 10px 55px;
   
   color: $whiteColor;
