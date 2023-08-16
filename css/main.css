@@ -914,6 +914,11 @@ body {
   transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
   background-color: #ffffff;
   cursor: pointer;
+  outline: 0px solid rgba(33, 33, 33, 0.2);
+  transition: outline 150ms linear;
+}
+.backdrop-btn:hover {
+  outline-width: 3px;
 }
 @media screen and (max-width: 479.98px) {
   .backdrop-btn {
@@ -977,6 +982,11 @@ body {
   cursor: pointer;
   outline: none;
   transition: border-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  outline: 1px solid rgba(33, 33, 33, 0.2);
+  transition: outline 150ms linear;
+}
+.modal__inpute:hover {
+  outline-width: 3px;
 }
 
 .modal__inpute:focus,
@@ -1007,17 +1017,21 @@ body {
   height: 120px;
   color: #212121;
   border: 1px solid rgba(33, 33, 33, 0.2);
+  transition: outline 0.6s linear;
   border-radius: 4px;
   cursor: pointer;
   resize: none;
-  outline: none;
   transition: border-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  outline: 1px solid rgba(33, 33, 33, 0.2);
+  transition: outline 150ms linear;
+}
+.modal__comment:hover {
+  outline-width: 3px;
 }
 
 .checkbox__agreement {
   margin-left: 7px;
   color: #757575;
-  cursor: pointer;
 }
 
 .checkbox {
@@ -1046,19 +1060,28 @@ body {
   border: 2px solid #212121;
   border-radius: 2px;
   fill: #fff;
+  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  outline: 0px solid rgba(33, 33, 33, 0.2);
+  transition: outline 150ms linear;
 }
 .checkbox__icon:hover {
   background-color: #999999;
   fill: #999999;
   border-color: #999999;
+  outline-width: 3px;
 }
-.checkbox__icon:active, .checkbox__icon:checked {
+.checkbox__icon:active {
   background-color: #2196f3;
   border-color: #2196f3;
   fill: #ffffff;
 }
 .checkbox__icon:focus {
   border-color: #2196f3;
+}
+.checkbox__icon::after {
+  content: "";
+  position: absolute;
+  display: none;
 }
 
 .checkbox__input {
@@ -1070,6 +1093,20 @@ body {
   padding: 0;
   clip: rect(0 0 0 0);
   overflow: hidden;
+}
+.checkbox__input:active ~ .checkbox__icon, .checkbox__input:checked ~ .checkbox__icon {
+  background-color: #2196f3;
+  border-color: #2196f3;
+  fill: #ffffff;
+}
+.checkbox__input:focus ~ .checkbox__icon {
+  border-color: #2196f3;
+}
+
+.checkbox__label input:checked ~ .checkbox__icon {
+  background-color: #2196f3;
+  border-color: #2196f3;
+  fill: #ffffff;
 }
 
 .checkbox__link {
@@ -1598,6 +1635,11 @@ body {
   background-color: #2f303a;
   color: #ffffff;
   cursor: pointer;
+  outline: 0px solid rgba(33, 33, 33, 0.2);
+  transition: outline 150ms linear;
+}
+.form-footer__inpute:hover {
+  outline-width: 3px;
 }
 @media screen and (min-width: 480px) {
   .form-footer__inpute {

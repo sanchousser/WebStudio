@@ -57,6 +57,12 @@
   
     cursor: pointer;
 
+    outline: 0px solid rgba(33, 33, 33, 0.2);
+    transition: outline 150ms linear;
+    &:hover {
+      outline-width: 3px;
+    }
+    
     @include media (mobile){
       width: 450px;
     }

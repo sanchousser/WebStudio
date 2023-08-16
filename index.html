@@ -110,13 +110,15 @@
               </div>
 
               <div class="checkbox">
-                <input class="checkbox__input" type="checkbox" checked="checked" id="checkbox" name="agree" required>
+                <label class="checkbox__label" for="checkbox">
+                <input class="checkbox__input" type="checkbox" id="checkbox" name="agree" required>
                 <span class="checkbox__icon">
                   <svg width="11" height="8">
                     <use href="./images/icon.svg#icon-icon-check"></use>
                   </svg>
                 </span>
-                <label class="checkbox__agreement" for="checkbox">Погоджуюся з розсилкою та приймаю<a href="" class="checkbox__link"> Умови договору</a></label>
+              </label>
+                <p class="checkbox__agreement">Погоджуюся з розсилкою та приймаю<a href="" class="checkbox__link"> Умови договору</a></p>
               </div>
               <button class="form-button" type="submit">Відправити</button>
             </form>
